@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class TestSenha {
+  public static void main(String[]args) {
+    String senha, senha2;
+    Scanner hallo=new Scanner(System.in);
+    System.out.println("Crie uma senha");
+    senha=hallo.nextLine();
+    System.out.println("insira sua senha");
+    senha2=hallo.nextLine();
+      do{
+        System.out.println("senha incorreta");
+        senha2=hallo.nextLine();
+        if(senha2==senha) {
+          System.out.println("senha correta");
+          break;
+        }
+      }while(senha2!=senha);
+  }
+}
+
+/*não funciona*/
